@@ -4,10 +4,10 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navigation = [
-  { name: "Home", href: "/" },
-  { name: "About", href: "/about" },
-  { name: "Services", href: "/services" },
-  { name: "Contact", href: "/contact" },
+  { name: "Home", href: "/trustflow-data-ai/" },
+  { name: "About", href: "/trustflow-data-ai/about" },
+  { name: "Services", href: "/trustflow-data-ai/services" },
+  { name: "Contact", href: "/trustflow-data-ai/contact" },
 ];
 
 export default function Layout({ children }: { children: React.ReactNode }) {
