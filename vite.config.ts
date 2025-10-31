@@ -15,5 +15,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: "/trustflow-data-ai/"
+  base: "/jawda-med-landing-page/"
 }));

@@ -18,10 +18,10 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Routes>
-          <Route path="/trustflow-data-ai" element={<Index />} />
-          <Route path="/trustflow-data-ai/about" element={<About />} />
-          <Route path="/trustflow-data-ai/services" element={<Services />} />
-          <Route path="/trustflow-data-ai/contact" element={<Contact />} />
+          <Route path="/jawda-med-landing-page" element={<Index />} />
+          <Route path="/jawda-med-landing-page/about" element={<About />} />
+          <Route path="/jawda-med-landing-page/services" element={<Services />} />
+          <Route path="/jawda-med-landing-page/contact" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
