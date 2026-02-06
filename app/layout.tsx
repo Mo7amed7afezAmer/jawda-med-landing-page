@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import { Toaster } from '@/components/ui/toaster';
 import { Toaster as Sonner } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -26,13 +27,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={inter.className}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          {children}
-        </TooltipProvider>
+        <ThemeProvider>
+          <TooltipProvider>
+            <Toaster />
+            <Sonner />
+            {children}
+          </TooltipProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

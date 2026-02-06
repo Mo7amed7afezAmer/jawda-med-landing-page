@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import { Button } from '@/components/ui/button';
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 const navigation = [
   { name: 'Home', href: '/' },
@@ -41,6 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {item.name}
                 </Link>
               ))}
+              <ThemeToggle />
             </div>
 
             {/* Mobile menu button */}
